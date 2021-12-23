@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nice.springcloud.dao.DeptDao">
+    <insert id="addDept" parameterType="Dept">
+        INSERT INTO db01.dept (dept_name, db_source)
+        VALUES (#{deptName}, DATABASE());
+    </insert>
+    <select id="queryDeptById" resultType="Dept" parameterType="long">
+        SELECT * FROM db01.dept WHERE dept_no =  #{deptno};
+    </select>
+    <select id="queryAll" resultType="Dept">
+        SELECT * FROM db01.dept;
+    </select>
+
+</mapper>
