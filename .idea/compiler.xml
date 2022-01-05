@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-api" />
+        <module name="springcloud-eureka-7001" />
+        <module name="springcloud-consumer-dept-80" />
       </profile>
     </annotationProcessing>
   </component>

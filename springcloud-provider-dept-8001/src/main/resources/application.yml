@@ -18,3 +18,16 @@ spring:
     url: jdbc:mysql://localhost:3306/db01?useUnicode=true&characterEncoding=utf-8
     username: root
     password: 123456
+# eureka: 注册地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    # eureka的status描述
+    instance-id: spring-provider-dept8001
+
+# info配置
+info:
+  app.name: spring-cloud-provider
+  company.name: nice

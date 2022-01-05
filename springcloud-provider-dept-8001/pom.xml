@@ -17,6 +17,19 @@
     </properties>
 
     <dependencies>
+        <!-- 引入Eureka依赖-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+        <!-- 完善监控信息-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+            <version>2.0.6.RELEASE</version>
+        </dependency>
         <!-- 需要拿到api中的model-->
         <dependency>
             <groupId>org.example</groupId>
@@ -64,5 +77,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+
     </dependencies>
 </project>
