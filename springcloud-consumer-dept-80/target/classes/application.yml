@@ -6,7 +6,8 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
+    register-with-eureka: false
   instance:
     # eureka的status描述
     instance-id: spring-consumer-dept80

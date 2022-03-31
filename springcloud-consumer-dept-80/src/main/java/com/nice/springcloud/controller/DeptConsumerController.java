@@ -31,6 +31,7 @@ public class DeptConsumerController {
 
     private static final Logger logger = LoggerFactory.getLogger(DeptConsumerController.class);
 
+    // 对于ribbon需要将指向地址变为动态
     private static final String REST_URL_PREFIX = "http://localhost:8001/";
 
     @RequestMapping("/consumer/dept/add")
